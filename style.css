@@ -1,0 +1,163 @@
+*{
+    /*calcular el ancho que se le da a un elemento tomando en cuenta su contenido y los bordes*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    /*centrar todo lo del contenedor*/
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header{
+    /*Codigo para poner una imagen de fondo*/
+    background-image: url('./img/fondo.svg');
+    background-repeat: no-repeat;
+    background-position:center center fixed;
+    background-size: cover;
+    /*Podemos limitar el tamaño de nuestra imagen */
+    min-height: 300px;
+}
+
+header .contenido{
+    display: block;
+}
+
+header .contenedor .menu {
+    margin: 60px;
+    align-content: space-between;
+}
+
+/*Agregando estilos a nuestro menu de navegación*/
+header .menu a{
+    margin:0 20px;
+    color: #fff;
+    padding-bottom: 9px;
+    /*Podemos separar y acomodar  nuestros elementos en linea*/
+    display:inline-block;
+    /*Si la letra tiene diseño predeterminado, lo podemos anular*/
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+}
+
+/*------------MAIN--------------*/
+
+.contenido .acerca_de .contenedor {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido .acerca_de .contenedor .texto{
+    color:#5a5a5a;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px;
+}
+
+.contenido .acerca_de .texto .titulo{
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: rgb(117, 117, 73);
+    text-align: center;
+}
+
+.contenido .acerca_de .texto .bold{
+    color:rgb(47, 71, 47);
+}
+
+/*Comenzamos a agregar estilos a nuestra seccion de productos*/
+.contenido .productos .contenedor {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido .productos{
+    background-color: #f2f2f2;
+    padding: 60px 0;
+}
+
+.contenido .productos .contenedor{
+    overflow: hidden;
+}
+
+.contenido .productos .contenedor .titulo{
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: rgb(117, 117, 73);
+    text-align: center;
+}
+
+/*Acomodamos nuestros elementos productos*/
+.contenido .productos .contenedor-productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    justify-content:space-between;
+}
+
+/*Codigo para que cada producto tenga la misma proporción incluyendo margenes*/
+.contenido .productos .contenedor-productos .producto{
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+/*Indica que lo que este dentro de nuestro contenedor abarcara el 100% del espacio destinado para ese elemento*/
+.contenido .productos .contenedor-productos .producto .thumb{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*Agregando estilos que nos ayudaran a acomodar y dar estilos a  nuestras imagenes*/
+.contenido .productos .contenedor-productos .producto .thumb img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+
+/*Agregando estilos que nos ayudaran a acomodar nuestras imagenes*/
+.contenido .productos .contenedor-productos .producto .descripcion{
+    text-align: center;
+}
+
+.contenido .productos .contenedor-productos .producto .nombre{
+    font-weight: 700;
+    color:rgb(47, 71, 47);
+}
+
+.contenido .productos .contenedor-productos .producto.categoria{
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+/*--------------FOTTER-----------*/
+footer .contacto{
+    padding: 60px 0;
+}
+
+footer .contacto .titulo{
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: rgb(117, 117, 73);
+    text-align: center;
+}
